@@ -1,0 +1,37 @@
+set,algo,params,val_roc_auc
+A,LogReg,{'C': 0.01},0.7075
+A,LogReg,{'C': 0.1},0.70746
+A,LogReg,{'C': 1.0},0.70746
+A,LogReg,{'C': 10.0},0.70746
+A,RandomForest,"{'max_depth': 8, 'min_samples_leaf': 10}",0.74161
+A,RandomForest,"{'max_depth': 8, 'min_samples_leaf': 50}",0.74206
+A,RandomForest,"{'max_depth': 12, 'min_samples_leaf': 10}",0.73904
+A,RandomForest,"{'max_depth': 12, 'min_samples_leaf': 50}",0.74094
+A,GradBoost,"{'learning_rate': 0.05, 'max_leaf_nodes': 15}",0.74076
+A,GradBoost,"{'learning_rate': 0.05, 'max_leaf_nodes': 31}",0.74225
+A,GradBoost,"{'learning_rate': 0.1, 'max_leaf_nodes': 15}",0.74149
+A,GradBoost,"{'learning_rate': 0.1, 'max_leaf_nodes': 31}",0.7419
+B,LogReg,{'C': 0.01},0.71034
+B,LogReg,{'C': 0.1},0.71076
+B,LogReg,{'C': 1.0},0.71077
+B,LogReg,{'C': 10.0},0.71078
+B,RandomForest,"{'max_depth': 8, 'min_samples_leaf': 10}",0.77392
+B,RandomForest,"{'max_depth': 8, 'min_samples_leaf': 50}",0.77516
+B,RandomForest,"{'max_depth': 12, 'min_samples_leaf': 10}",0.77212
+B,RandomForest,"{'max_depth': 12, 'min_samples_leaf': 50}",0.77417
+B,GradBoost,"{'learning_rate': 0.05, 'max_leaf_nodes': 15}",0.7742
+B,GradBoost,"{'learning_rate': 0.05, 'max_leaf_nodes': 31}",0.76983
+B,GradBoost,"{'learning_rate': 0.1, 'max_leaf_nodes': 15}",0.77356
+B,GradBoost,"{'learning_rate': 0.1, 'max_leaf_nodes': 31}",0.76922
+C,LogReg,{'C': 0.01},0.71255
+C,LogReg,{'C': 0.1},0.71369
+C,LogReg,{'C': 1.0},0.71419
+C,LogReg,{'C': 10.0},0.71421
+C,RandomForest,"{'max_depth': 8, 'min_samples_leaf': 10}",0.77145
+C,RandomForest,"{'max_depth': 8, 'min_samples_leaf': 50}",0.77205
+C,RandomForest,"{'max_depth': 12, 'min_samples_leaf': 10}",0.77121
+C,RandomForest,"{'max_depth': 12, 'min_samples_leaf': 50}",0.7743
+C,GradBoost,"{'learning_rate': 0.05, 'max_leaf_nodes': 15}",0.77378
+C,GradBoost,"{'learning_rate': 0.05, 'max_leaf_nodes': 31}",0.77064
+C,GradBoost,"{'learning_rate': 0.1, 'max_leaf_nodes': 15}",0.77085
+C,GradBoost,"{'learning_rate': 0.1, 'max_leaf_nodes': 31}",0.76695

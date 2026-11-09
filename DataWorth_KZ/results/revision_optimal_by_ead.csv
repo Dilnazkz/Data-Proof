@@ -1,0 +1,9 @@
+ead,scenario,optimal_subset,n_scoring_fields,fields_processed_incl_EAD,test_value_vs_S0_per_client
+balance_based,conservative,G1+G2+G3+G6,11,11,872.5753444444445
+balance_based,base,G1+G2+G3,6,6,1813.8010111111112
+balance_based,optimistic,G1+G2+G6,10,10,570.8285888888877
+balance_based,monthly_2pct,G1+G2+G6,10,10,-228.5734133333333
+limit_based,conservative,G1+G2+G3,6,6,367.1111111111111
+limit_based,base,G1+G2+G3,6,6,1300.3622222222223
+limit_based,optimistic,G1+G2+G6,10,10,521.3333333333339
+limit_based,monthly_2pct,G1+G2+G6,10,10,-222.87777777777777

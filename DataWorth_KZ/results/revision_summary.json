@@ -1,0 +1,21 @@
+{
+  "lambda_star_min": {
+    "vs_subset": "G2",
+    "fields": 3,
+    "val_gap_pc": 286.29249999999956,
+    "lambda_star_bp": 8.63666138360111
+  },
+  "scale_invariance": {
+    "same_optimal": true,
+    "profit_ratio_B": 2.0
+  },
+  "ead_fields": {
+    "balance_based": [
+      "LIMIT_BAL",
+      "BILL_AMT1"
+    ],
+    "limit_based": [
+      "LIMIT_BAL"
+    ]
+  }
+}

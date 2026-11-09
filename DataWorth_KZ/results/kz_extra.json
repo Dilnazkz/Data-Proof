@@ -1,0 +1,10 @@
+{
+  "lam_star_bp": 9.316088771365111,
+  "lam_star_vs": "G2+G3",
+  "c_star_bp": 9.011429362649839,
+  "c_star_vs": "G1+G5",
+  "lam_star_kzt": 650.2346223668543,
+  "c_star_kzt": 628.9703235352046,
+  "sens_B_gt_A_share": 1.0,
+  "sens_C_gt_B_share": 0.2
+}

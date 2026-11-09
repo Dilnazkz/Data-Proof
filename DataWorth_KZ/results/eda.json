@@ -1,0 +1,152 @@
+{
+  "integrity": {
+    "n_rows": 30000,
+    "n_default": 6636,
+    "limit_bal_mean": 167484.32,
+    "matches_reference": true
+  },
+  "shape": {
+    "rows": 30000,
+    "columns": 25,
+    "features_excl_id_target": 23
+  },
+  "default_rate": 0.2212,
+  "class_counts": {
+    "0": 23364,
+    "1": 6636
+  },
+  "imbalance_ratio_nondefault_to_default": 3.521,
+  "missing_values_total": 0,
+  "duplicate_rows_excl_id": 35,
+  "anomalies": {
+    "EDUCATION_codes_0_5_6": 345,
+    "MARRIAGE_code_0": 54,
+    "PAY_status_value_counts_PAY_0": {
+      "-2": 2759,
+      "-1": 5686,
+      "0": 14737,
+      "1": 3688,
+      "2": 2667,
+      "3": 322,
+      "4": 76,
+      "5": 26,
+      "6": 11,
+      "7": 9,
+      "8": 19
+    },
+    "PAY_status_minus2_or_0_share_all_months": 0.6685,
+    "negative_BILL_AMT_rows": 1930,
+    "BILL_AMT1_min": -165580.0,
+    "PAY_AMT1_max": 873552.0,
+    "zero_activity_rows_all_bills_and_payments_zero": 795
+  },
+  "limit_bal": {
+    "count": 30000.0,
+    "mean": 167484.32266666667,
+    "std": 129747.66156720239,
+    "min": 10000.0,
+    "25%": 50000.0,
+    "50%": 140000.0,
+    "75%": 240000.0,
+    "95%": 430000.0,
+    "99%": 500000.0,
+    "max": 1000000.0
+  },
+  "default_rate_by_limit_quintile": {
+    "(9999.999, 50000.0]": 0.3179,
+    "(50000.0, 100000.0]": 0.258,
+    "(100000.0, 180000.0]": 0.1986,
+    "(180000.0, 270000.0]": 0.1686,
+    "(270000.0, 1000000.0]": 0.138
+  },
+  "default_rate_by_PAY_0": {
+    "-2": {
+      "n": 2759,
+      "default_rate": 0.1323
+    },
+    "-1": {
+      "n": 5686,
+      "default_rate": 0.1678
+    },
+    "0": {
+      "n": 14737,
+      "default_rate": 0.1281
+    },
+    "1": {
+      "n": 3688,
+      "default_rate": 0.3395
+    },
+    "2": {
+      "n": 2667,
+      "default_rate": 0.6914
+    },
+    "3": {
+      "n": 322,
+      "default_rate": 0.7578
+    },
+    "4": {
+      "n": 76,
+      "default_rate": 0.6842
+    },
+    "5": {
+      "n": 26,
+      "default_rate": 0.5
+    },
+    "6": {
+      "n": 11,
+      "default_rate": 0.5455
+    },
+    "7": {
+      "n": 9,
+      "default_rate": 0.7778
+    },
+    "8": {
+      "n": 19,
+      "default_rate": 0.5789
+    }
+  },
+  "default_rate_by_payment_to_bill_ratio_quintile": {
+    "(-0.001, 0.0345]": 0.322,
+    "(0.0345, 0.0477]": 0.194,
+    "(0.0477, 0.0943]": 0.217,
+    "(0.0943, 0.491]": 0.2115,
+    "(0.491, 2.0]": 0.1491
+  },
+  "corr_BILL_AMT1_PAY_AMT2": 0.0994,
+  "corr_with_target": {
+    "PAY_0": 0.3248,
+    "PAY_2": 0.2636,
+    "PAY_3": 0.2353,
+    "PAY_4": 0.2166,
+    "PAY_5": 0.2041,
+    "PAY_6": 0.1869,
+    "LIMIT_BAL": -0.1535,
+    "PAY_AMT1": -0.0729,
+    "PAY_AMT2": -0.0586,
+    "PAY_AMT4": -0.0568,
+    "PAY_AMT3": -0.0563,
+    "PAY_AMT5": -0.0551,
+    "PAY_AMT6": -0.0532,
+    "BILL_AMT1": -0.0196,
+    "BILL_AMT2": -0.0142,
+    "BILL_AMT3": -0.0141,
+    "BILL_AMT4": -0.0102,
+    "BILL_AMT5": -0.0068,
+    "BILL_AMT6": -0.0054
+  },
+  "corr_BILL_AMT_mean_offdiag": 0.8865,
+  "corr_PAY_status_mean_offdiag": 0.6564,
+  "demographic_default_rates": {
+    "SEX": {
+      "1": 0.2417,
+      "2": 0.2078
+    },
+    "MARRIAGE": {
+      "0": 0.0926,
+      "1": 0.2347,
+      "2": 0.2093,
+      "3": 0.2601
+    }
+  },
+  "leakage_review": "Target = default in Oct 2005; all features refer to Apr–Sep 2005 (PAY_0 = Sep status, BILL/PAY_AMT1 = Sep). No feature is computed from the target month. ID is dropped. Residual risk: random (not time-based) split, since the file contains one snapshot of different clients; no client appears twice."
+}

@@ -1,0 +1,86 @@
+{
+  "scale_factor_kzt_per_ntd": 6.316749408624966,
+  "E_kz": 697969.5431472082,
+  "sources": {
+    "r_cons": [
+      22.5,
+      "%",
+      "2026 ж. шілде",
+      "ҚНРДА: банк секторының 01.08.2026 жағдайы"
+    ],
+    "r_dep": [
+      14.7,
+      "%",
+      "2026 ж. шілде",
+      "ҚНРДА: банк секторының 01.08.2026 жағдайы"
+    ],
+    "r_base": [
+      15.75,
+      "%",
+      "23.10.2026 шешімі",
+      "ҚР Ұлттық Банкі"
+    ],
+    "debt_bureau_trn": [
+      27.5,
+      "трлн ₸",
+      "01.01.2026",
+      "Бірінші кредиттік бюро (Tengrinews арқылы)"
+    ],
+    "loans_bureau_mn": [
+      39.4,
+      "млн кредит",
+      "01.01.2026",
+      "Tengrinews"
+    ]
+  },
+  "H4": {
+    "KZ1_base": {
+      "optimal_subset": "G1+G2+G3",
+      "differs_from_TW_base": false
+    },
+    "KZ2_high_risk": {
+      "optimal_subset": "G1+G2+G3",
+      "differs_from_TW_base": false
+    },
+    "KZ3_data_cost": {
+      "optimal_subset": "G2",
+      "differs_from_TW_base": true
+    },
+    "KZ_monthly": {
+      "optimal_subset": "G1+G3",
+      "differs_from_TW_base": true
+    }
+  },
+  "best_model": [
+    {
+      "scenario": "KZ1_base",
+      "algo": "GradBoost",
+      "set": "B",
+      "profit_pc_kzt": 7718.368012051394
+    },
+    {
+      "scenario": "KZ2_high_risk",
+      "algo": "RandomForest",
+      "set": "B",
+      "profit_pc_kzt": 2979.5973361233987
+    },
+    {
+      "scenario": "KZ3_data_cost",
+      "algo": "GradBoost",
+      "set": "B",
+      "profit_pc_kzt": 7718.368012051394
+    },
+    {
+      "scenario": "KZ_monthly",
+      "algo": "GradBoost",
+      "set": "B",
+      "profit_pc_kzt": 14.756941509619574
+    },
+    {
+      "scenario": "TW_base",
+      "algo": "GradBoost",
+      "set": "B",
+      "profit_pc_kzt": 13787.312439086672
+    }
+  ]
+}
